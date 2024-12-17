@@ -19,7 +19,7 @@ function App() {
   const [markCount, setMarkCount] = useState<number>(0);
   const [remainingToMark, setRemainingToMark] = useState<number>(0);
 
-  const op = useRef(null);
+  const op = useRef<OverlayPanel>(null);
 
   const PAGE_SIZE = data?.pagination?.limit || 12;
 
